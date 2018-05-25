@@ -10,7 +10,7 @@ class ntp_lab(
   Boolean $service_hasrestart = $ntp_lab::params::service_hasrestart,
   Boolean $service_hasstatus  = $ntp_lab::params::service_hasstatus,
 ) inherits ::ntp_lab::params {
-  class { ‘::ntp_lab::install’: }
-  -> class { ‘::ntp_lab::config’: }
-  ~> class { ‘::ntp_lab::service’: }
+  class { '::ntp_lab::install': }
+  -> class { '::ntp_lab::config': }
+  ~> class { '::ntp_lab::service': }
 }

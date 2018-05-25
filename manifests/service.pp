@@ -5,7 +5,7 @@ class ntp_lab::service(
   Boolean $service_hasstatus  = $ntp_lab::service_hasstatus,
   Boolean $service_hasrestart = $ntp_lab::service_hasrestart,
 ) {
-  service { ‘ntp_lab’:
+  service { 'ntp_lab':
     ensure     => $service_ensure,
     enable     => $service_enable,
     name       => $service_name,
